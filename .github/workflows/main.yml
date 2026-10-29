@@ -1,0 +1,17 @@
+name: schedule job
+
+on:
+ schedule:
+    - cron: "55 3 * * *"
+
+jobs:
+   run-script:
+      runs-on: ubuntu-latest
+
+      steps:
+         - name: print message
+           run: echo "schedule workflow executed"
+    
+
+
+ 
